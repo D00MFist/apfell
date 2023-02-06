@@ -18,7 +18,7 @@ class AddUserArguments(TaskArguments):
                 )]
             ),
             CommandParameter(
-                name="Authenticate with this password",
+                name="user",
                 type=ParameterType.Credential_Value,
                 description="password of the user that will execute the commands",
                 parameter_group_info=[ParameterGroupInfo(
@@ -26,7 +26,7 @@ class AddUserArguments(TaskArguments):
                 )]
             ),
             CommandParameter(
-                name="Authenticate as this user",
+                name="passwd",
                 type=ParameterType.Credential_Account,
                 description="username that will execute the commands",
                 parameter_group_info=[ParameterGroupInfo(
